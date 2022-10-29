@@ -1,0 +1,339 @@
+:root {
+  --primary-color: #590d82;
+  --second-color: #f25d9c;
+  --light-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+form {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 15% 80% 5%;
+}
+
+h1 {
+  font-size: 18pt;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 14pt;
+  color: var(--primary-color);
+  margin: 5px;
+}
+
+input {
+  background-color: var(--light-color);
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: 0.5px #b9b9b9b4 solid;
+  outline: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  
+}
+
+/* ------------ show password ------------ */
+
+label[for="btnChk"]{
+  color: var(--second-color);
+  margin: 0;
+  position: absolute;
+  margin: 5px;
+} 
+
+/* ------------               ------------ */
+
+/* ------------ form content ------------ */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 70%;
+  height: 90%;
+  background-color: var(--light-color);
+  border-radius: 15px;
+}
+
+.title{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__container {
+  width: 50%;
+  height: 100%;
+  background-color: var(--light-color);
+  float: left;
+}
+
+.logo {
+  width: 180px;
+  height: 90px;
+  margin: 0 0 0 20px;
+}
+
+.form__content__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: "col1 colfill col2";
+}
+
+.form__content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-color);
+  grid-area: colfill;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__google {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  margin: 10px;
+  transition: all .25s ease-in-out; 
+}
+
+.div__btn__google{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google{
+  width: 24px;
+  height: 24px;
+}
+
+.btn__github {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #0d1117;
+  transition: all .25s ease-in-out; 
+}
+
+.div__btn__github{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__github:hover, .btn__google:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.github{
+  width: 24px;
+  height: 24px;
+}
+
+.line {
+  width: 65%;
+  border-radius: 10px;
+  border-bottom: 1px #0000002f solid;
+  margin: 10px 0 10px 0;
+}
+
+.pass__view{
+  width: 100%;
+  height: 28px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+/* ------------               ------------ */
+
+/* ------------ Image container ------------ */
+.img__container {
+  width: 50%;
+  height: 100%;
+  float: right;
+  border-radius: 0 10px 10px 0;
+  background: rgba(12, 12, 12, 0.432) url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  display: grid;
+  grid-template-rows: 55% 30% 15%;
+  grid-template-areas:
+    "img"
+    "txt"
+    "info";
+}
+
+.txt__img__container {
+  width: 100%;
+  grid-area: txt;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.txt__img__container p{
+    color: var(--light-color);
+    font-size: 16pt;
+}
+
+.backg__info {
+  grid-area: info;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: "emp link";
+  padding: 5px 5px 5px 10px;
+  box-sizing: border-box;
+}
+
+.backg__info .backg__txt{
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+
+}
+
+.link__img__container {
+  width: 100%;
+  height: 40px;
+  grid-area: link;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.link__img__container span a{
+    text-decoration: none;
+    color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 11pt;
+    width: 120px;
+    font-style: italic;
+}
+.link__icon{
+    width: 16px;
+    height: 16px;
+    fill: #dadada;
+}
+
+.link__img__container span a:hover{
+  text-decoration: underline;
+  color: var(--light-color);
+}
+
+.link__img__container span a:hover > .link__icon{
+ fill: var(--light-color); 
+}
+/* ------------               ------------ */
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+/* ------------ Bottom side ------------ */
+
+.bottom__side {
+  width: 80%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom__side .login {
+  width: 125px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: var(--second-color);
+  color: var(--light-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0px 15px 0px;
+  cursor: pointer;
+}
+
+.bottom__side a {
+  color: var(--primary-color);
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.bottom__side a:hover {
+  text-decoration: underline;
+}
+/* ------------               ------------ */
+
+/* ------------ show password ------------ */
+#btnChk{
+  display: none;
+}
+/* ------------               ------------ */
+
+
+/* ------------ Responsive ------------ */
+
+@media (max-width: 900px) {
+
+  h1{
+    font-size: 16pt;
+    font-weight: 700;
+  }
+  
+  .logo{
+    margin: 0 auto;
+  }
+
+  .img__container{
+    display: none;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  .login__container{
+    width: 100%;
+  }
+
+  .input__container{
+    width: 100%;
+  }
+
+  .btn__google, .btn__github{
+    width: 100%;
+  }
+}
+/* ------------               ------------ */

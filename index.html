@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://css.gg/css?=|eye-alt|eye" rel="stylesheet">
+    <title>LoginFront</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="login__container">
+                <form action="">
+                    <img src="loginfront.svg" class="logo" alt="LoginFront logo">
+                    <div class="form__content__container">
+                        <div class="form__content">
+                            <div class="title">
+                                <h1>Log in to your account</h1>
+                            </div>
+
+                            <button type="button" class="btn__google">
+                                <div class="div__btn__google">
+                                    <img src="google.svg" alt="" class="google">
+                                </div>
+                            </button>
+                            <button type="button" class="btn__github">
+                                <div class="div__btn__github">
+                                    <img src="github.svg" alt="github logo" class="github">
+                                </div>
+                            </button>
+                            <div class="line">
+                            </div>
+                            <div class="input__container">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <input type="email" class="email" name="email" id="email">
+                                <label for="pass">
+                                    Password
+                                </label>
+                                <div class="pass__view">
+                                    <input type="password" class="pass" name="pass" id="pass">
+                                    <label for="btnChk" class="gg-eye" id="eye"></label>
+                                    <input type="checkbox" name="check" id="btnChk" onclick="showPassword()">
+                                </div>
+
+
+                            </div>
+                            <div class="bottom__side">
+                                <button type="submit" onclick="validate()" class="login">
+                                    Login
+                                </button>
+                                <a href="#"><span>Forgot your password?</span></a>
+                                <a href="#"><span>Sign Up</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="img__container">
+                <div class="txt__img__container">
+                    <p>"We move 10x faster than our peers and stay consistent. While they're bogged down with old tech,
+                        we're releasing new features".</p>
+                </div>
+                <div class="backg__info">
+                    <div class="backg__txt">
+                        <h3>Jane Doe</h3>
+                        <span>CEO & Founder</span>
+                        <span>LoginFront</span>
+                    </div>
+                    <div class="link__img__container">
+                        <span>
+                            <a href="https://linktr.ee/ricocondee" target="_blank">Social Media <svg class="link__icon"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="#currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 13.9633H16V7.96331H10V9.96331H12.5858L7.25623 15.2929L8.67044 16.7071L14 11.3775V13.9633Z"
+                                        fill="#currentColor" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23 19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19ZM19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z"
+                                        fill="#currentColor" />
+                                </svg></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
